@@ -1,7 +1,16 @@
 # Changelog
 ---
+### 17 APR 2024
+- 
+---
 ### 16 APR 2024
 - Added GitHub Pages deployment to instructions in `README.md`.
+- Used `module-webpack-starter` repository as a template to create `homepage` repository.
+- Updated `devDependencies` to `wanted` versions.
+- Removed `devServer` from `webpack.config.js`, `server.js`, and `testing` subdirectory.
+- Initialized a variety of components.
+- Created `createElement` and `pubSub` helpers.
+- Downloaded a handful of icons.
 ---
 ### 15 FEB 2024
 - Installed npm packages: `jest`, `babel/core`, `babel/preset-env`, and `babel-jest`.
