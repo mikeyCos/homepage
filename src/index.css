@@ -1,0 +1,20 @@
+@font-face {
+  /* https://fonts.google.com/specimen/Roboto+Condensed */
+  font-family: 'Roboto Condensed';
+  src: url(./assets/fonts/Roboto_Condensed/static/RobotoCondensed-Medium.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aqua;
+  font-family: 'Roboto Condensed', Arial;
+  font-family: 'Roboto Condensed';
+  font-family: Arial;
+}
