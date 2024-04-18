@@ -7,6 +7,8 @@ export default () => {
     bindEvents() {},
     render() {
       const footer = createElement('footer');
+      const footerWrapper = createElement('div', { textContent: 'Placeholder' });
+      footer.appendChild(footerWrapper);
       return footer;
     },
   };

@@ -28,14 +28,18 @@ const BuildElement = (state) => ({
   },
   setChildren: (children) => {
     children.forEach((child) => {
-      const childElement = createElement(child.element);
-      if (child.attributes && child.attributes.constructor.name === 'Object') {
-        childElement.setAttributes(child.attributes);
+      if (child instanceof HTMLElement) {
+        state.appendChild(child);
+      } else {
+        const childElement = createElement(child.element);
+        if (child.attributes && child.attributes.constructor.name === 'Object') {
+          childElement.setAttributes(child.attributes);
+        }
+        if (child.children) {
+          childElement.setChildren(child.children);
+        }
+        state.appendChild(childElement);
       }
-      if (child.children) {
-        childElement.setChildren(child.children);
-      }
-      state.appendChild(childElement);
     });
   },
 });

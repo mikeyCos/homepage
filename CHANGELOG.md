@@ -1,7 +1,13 @@
 # Changelog
 ---
-### 17 APR 2024
+### 18 APR 2024
 - 
+---
+### 17 APR 2024
+- Hamburger menu implemented; toggles the unordered list of class `.nav_right` for mobile/tablets.
+- Added a case for `instanceof HTMLElement` in the `setChildren` method.
+- Created a `buttons` subdirectory and a `btn_menu` module.
+- Filled sections with placeholder content.
 ---
 ### 16 APR 2024
 - Added GitHub Pages deployment to instructions in `README.md`.

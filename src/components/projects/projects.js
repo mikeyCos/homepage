@@ -8,6 +8,7 @@ export default () => {
     bindEvents() {},
     render() {
       const projectsSection = createElement(projectsConfig.element, projectsConfig.attributes);
+      projectsSection.setChildren(projectsConfig.children);
       return projectsSection;
     },
   };

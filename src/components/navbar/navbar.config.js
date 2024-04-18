@@ -1,3 +1,6 @@
+import btn_menu from '../buttons/menu/btn_menu';
+import logoSVG from '../../assets/icons/placeholder/undraw_male_avatar_g98d.svg';
+
 export default {
   element: 'nav',
   children: [
@@ -9,6 +12,9 @@ export default {
       children: [
         {
           element: 'li',
+          attributes: {
+            class: 'nav_item',
+          },
           children: [
             {
               element: 'a',
@@ -19,7 +25,9 @@ export default {
                 {
                   element: 'img',
                   attributes: {
-                    src: '#',
+                    class: 'logo',
+                    src: logoSVG,
+                    onload: 'SVGInject(this)',
                   },
                 },
                 {
@@ -42,8 +50,42 @@ export default {
       children: [
         {
           element: 'li',
+          attributes: {
+            class: 'nav_item',
+          },
+          children: [
+            {
+              element: 'a',
+              attributes: {
+                href: '#',
+                textContent: 'placeholder',
+              },
+            },
+          ],
+        },
+        {
+          element: 'li',
+          attributes: {
+            class: 'nav_item',
+          },
+          children: [
+            {
+              element: 'a',
+              attributes: {
+                href: '#',
+                textContent: 'placeholder',
+              },
+            },
+          ],
         },
       ],
+    },
+    {
+      element: 'div',
+      attributes: {
+        class: 'btn_wrapper',
+      },
+      children: [btn_menu()],
     },
   ],
 };

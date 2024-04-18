@@ -1,0 +1,60 @@
+.btn_menu {
+  background: none;
+  border: none;
+  padding: 0.25rem;
+}
+
+.btn_menu:hover {
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  border: 2px solid black;
+}
+
+.menu_line {
+  background-color: #ffffff;
+  width: 50%;
+  height: 4px;
+  transition: transform 250ms ease-in;
+}
+
+.menu_line:nth-of-type(3) {
+  width: 100%;
+}
+
+.menu_line.active:nth-of-type(1) {
+  transform: rotate(45deg) translate(5px, 1px);
+  transition: transform 250ms ease-out;
+}
+
+.menu_line.active:nth-of-type(2) {
+  transform: rotate(-45deg) translate(-5px, 1px);
+  transition: transform 250ms ease-out;
+}
+
+.menu_line.active:nth-of-type(3) {
+  transform: rotate(180deg);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    transform,
+    opacity,
+    visibility 500ms ease-out;
+}
+
+.menu_line.active:nth-of-type(4) {
+  transform: rotate(-45deg) translate(5px, -2px);
+  transition: transform 250ms ease-out;
+}
+
+.menu_line.active:nth-of-type(5) {
+  transform: rotate(45deg) translate(-5px, -2px);
+  transition: transform 250ms ease-out;
+}

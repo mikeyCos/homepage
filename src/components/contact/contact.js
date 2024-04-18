@@ -8,6 +8,7 @@ export default () => {
     bindEvents() {},
     render() {
       const contactSection = createElement(contactConfig.element, contactConfig.attributes);
+      contactSection.setChildren(contactConfig.children);
       return contactSection;
     },
   };
