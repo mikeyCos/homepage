@@ -1,3 +1,31 @@
+.contact {
+  background-color: #fffafa;
+}
+
+.contact > :first-child > h2 {
+  text-align: var(--section-heading-text-align);
+  padding: var(--section-heading-padding);
+  font-size: var(--section-heading-font-size);
+}
+
+.contact > * > div:not(:first-of-type) {
+  display: flex;
+}
+
+.contact > * > div:not(.address) {
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact > * > div:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+.contact > * > .address {
+  flex-direction: column;
+}
+
 .img_contact {
   width: 100%;
+  height: auto;
 }

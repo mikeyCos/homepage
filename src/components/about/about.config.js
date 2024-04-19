@@ -32,9 +32,11 @@ export default {
                   '(max-width: 700px) 640px, (max-width: 1920px) 1920px, (max-width: 2400px) 2400px, 4951px',
               },
             },
+
             {
               element: 'h2',
               attributes: {
+                id: 'about',
                 textContent: 'John Doe',
               },
             },
@@ -56,7 +58,7 @@ export default {
               element: 'p',
               attributes: {
                 textContent:
-                  'Pellentesque convallis ornare libero id vehicula. Mauris quis leo a nisl pellentesque fringilla sit amet at risus. Nullam mauris orci, sodales eu fermentum sed, ornare ac nisl. Fusce quis libero vulputate, pellentesque sapien sed, mattis elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce fringilla congue lectus, ut mollis mi tincidunt eu. Duis convallis sagittis risus quis sagittis. Duis eu convallis velit. Nunc lorem ex, sollicitudin a finibus rhoncus, rutrum eu lacus. Duis lorem enim, dictum ac odio rutrum, scelerisque rutrum tortor. Sed est magna, placerat eu dolor non, tincidunt rutrum sem. Sed ullamcorper, sapien vitae maximus volutpat, sem sem eleifend sem, at congue enim quam eget purus. Aenean imperdiet lorem nec massa lobortis dictum.',
+                  'Pellentesque convallis ornare libero id vehicula. Mauris quis leo a nisl pellentesque fringilla sit amet at risus. Nullam mauris orci, sodales eu fermentum sed, ornare ac nisl. Fusce quis libero vulputate, pellentesque sapien sed, mattis elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
               },
             },
             socials(),

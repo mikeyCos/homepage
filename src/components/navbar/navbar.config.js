@@ -57,8 +57,8 @@ export default {
             {
               element: 'a',
               attributes: {
-                href: '#',
-                textContent: 'placeholder',
+                href: '#about',
+                textContent: 'About',
               },
             },
           ],
@@ -72,8 +72,23 @@ export default {
             {
               element: 'a',
               attributes: {
-                href: '#',
-                textContent: 'placeholder',
+                href: '#projects',
+                textContent: 'Projects',
+              },
+            },
+          ],
+        },
+        {
+          element: 'li',
+          attributes: {
+            class: 'nav_item',
+          },
+          children: [
+            {
+              element: 'a',
+              attributes: {
+                href: '#contact',
+                textContent: 'Contact',
               },
             },
           ],

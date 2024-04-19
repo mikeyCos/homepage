@@ -1,5 +1,6 @@
 import createElement from '../../helpers/createElement';
 import navbar from '../navbar/navbar';
+import '../../styles/header.css';
 
 export default () => {
   const header = {
@@ -8,6 +9,7 @@ export default () => {
     bindEvents() {},
     render() {
       const header = createElement('header');
+      header.id = 'header_primary';
       header.appendChild(navbar());
 
       return header;

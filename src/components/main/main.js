@@ -2,6 +2,7 @@ import createElement from '../../helpers/createElement';
 import about from '../about/about';
 import projects from '../projects/projects';
 import contact from '../contact/contact';
+import '../../styles/main.css';
 
 export default () => {
   const build = {

@@ -1,5 +1,15 @@
 # Changelog
 ---
+### 20 APR 2024
+- 
+---
+### 19 APR 2024
+- Added a variety of CSS styles throughout sections, including but not limited to padding, margin, transform, transition, et cetera.
+- Applied a `position: sticky` to the `header` element containing the `nav` element.
+- Fixed the unordered list of class `.nav_right` appearing in the background by applying a `z-index: 1` to `header id="header_primary"`.
+- Added `fill="currentColor"` to SVG files in use.
+- Added the following style sheets: `footer`/`main`/`socials`.
+---
 ### 18 APR 2024
 - Defined `sizes` and `srcset` for the about section's `img` element.
 - Created `socials` module that renders an unordered list of common social media icons inside anchor elements.

@@ -1,23 +1,24 @@
 .about_left {
   position: relative;
+  display: grid;
 }
 
 .about_left > .img_about {
+  display: block;
   width: 100%;
+  padding: 1rem;
 }
 
 .about_left > h2 {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
   font-size: 4rem;
+  position: absolute;
+  justify-self: center;
+  align-self: end;
+  margin: 2rem;
 }
 
-.about_right > .socials {
-  list-style: none;
-  display: flex;
-  justify-content: center;
+.about_right > h2 {
+  text-align: var(--section-heading-text-align);
+  padding: var(--section-heading-padding);
+  font-size: var(--section-heading-font-size);
 }

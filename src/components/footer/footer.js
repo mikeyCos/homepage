@@ -1,4 +1,5 @@
 import createElement from '../../helpers/createElement';
+import '../../styles/footer.css';
 
 export default () => {
   const footer = {

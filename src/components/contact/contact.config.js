@@ -15,6 +15,7 @@ export default {
         {
           element: 'h2',
           attributes: {
+            id: 'contact',
             textContent: 'Contact me',
           },
         },
@@ -31,6 +32,9 @@ export default {
         },
         {
           element: 'div',
+          attributes: {
+            class: 'address',
+          },
           children: [
             {
               element: 'p',
@@ -48,6 +52,9 @@ export default {
         },
         {
           element: 'div',
+          attributes: {
+            class: 'phone',
+          },
           children: [
             {
               element: 'img',
@@ -67,6 +74,9 @@ export default {
         },
         {
           element: 'div',
+          attributes: {
+            class: 'email',
+          },
           children: [
             {
               element: 'img',
