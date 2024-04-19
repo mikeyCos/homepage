@@ -1,5 +1,6 @@
 import createElement from '../../helpers/createElement';
 import aboutConfig from './about.config';
+import '../../styles/about.css';
 
 export default () => {
   const about = {

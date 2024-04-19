@@ -1,7 +1,12 @@
 # Changelog
 ---
 ### 18 APR 2024
-- 
+- Defined `sizes` and `srcset` for the about section's `img` element.
+- Created `socials` module that renders an unordered list of common social media icons inside anchor elements.
+- The heading and anchor tags in article elements are wrapped in a `header` element.
+- Created `about`/`contact`/`projects` style sheets.
+- Added basic CSS styles to the projects section.
+- Created `images` subdirectory.
 ---
 ### 17 APR 2024
 - Hamburger menu implemented; toggles the unordered list of class `.nav_right` for mobile/tablets.

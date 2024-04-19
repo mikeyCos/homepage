@@ -1,9 +1,7 @@
 import phoneIcon from '../../assets/icons/phone_classic.svg';
 import emailIcon from '../../assets/icons/email.svg';
 import contactSVG from '../../assets/icons/placeholder/undraw_personal_text_re_vqj3.svg';
-import gitHubIcon from '../../assets/icons/github_mark/github-mark-white.svg';
-import linkedinIcon from '../../assets/icons/linkedin_mark/linkedin_00.svg';
-import xIcon from '../../assets/icons/x_mark/x_01.svg';
+import socials from '../socials/socials';
 
 export default {
   element: 'section',
@@ -86,77 +84,7 @@ export default {
             },
           ],
         },
-        {
-          element: 'ul',
-          attributes: {
-            class: 'socials',
-          },
-          children: [
-            {
-              element: 'li',
-              children: [
-                {
-                  element: 'a',
-                  attributes: {
-                    href: '#',
-                  },
-                  children: [
-                    {
-                      element: 'img',
-                      attributes: {
-                        class: 'icon icon_social',
-                        src: gitHubIcon,
-                        onload: 'SVGInject(this)',
-                      },
-                    },
-                  ],
-                },
-              ],
-            },
-            {
-              element: 'li',
-              children: [
-                {
-                  element: 'a',
-                  attributes: {
-                    href: '#',
-                  },
-                  children: [
-                    {
-                      element: 'img',
-                      attributes: {
-                        class: 'icon icon_social',
-                        src: linkedinIcon,
-                        onload: 'SVGInject(this)',
-                      },
-                    },
-                  ],
-                },
-              ],
-            },
-            {
-              element: 'li',
-              children: [
-                {
-                  element: 'a',
-                  attributes: {
-                    href: '#',
-                  },
-                  children: [
-                    {
-                      element: 'img',
-                      attributes: {
-                        class: 'icon icon_social',
-                        src: xIcon,
-                        onload: 'SVGInject(this)',
-                      },
-                    },
-                  ],
-                },
-              ],
-            },
-          ],
-        },
+        socials(),
       ],
     },
     {
@@ -165,6 +93,7 @@ export default {
         {
           element: 'img',
           attributes: {
+            class: 'img_contact',
             src: contactSVG,
             onload: 'SVGInject(this)',
           },

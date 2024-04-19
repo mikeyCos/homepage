@@ -1,5 +1,6 @@
 import createElement from '../../helpers/createElement';
 import projectsConfig from './projects.config';
+import '../../styles/projects.css';
 
 export default () => {
   const projects = {

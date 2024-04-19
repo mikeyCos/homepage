@@ -1,0 +1,23 @@
+.about_left {
+  position: relative;
+}
+
+.about_left > .img_about {
+  width: 100%;
+}
+
+.about_left > h2 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+}
+
+.about_right > .socials {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,17 @@
+.article_header {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.article_header > h3 {
+  flex-basis: 100%;
+}
+
+article > picture > img {
+  width: 100%;
+}
+
+.icon_project {
+  width: 24px;
+}

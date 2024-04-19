@@ -1,5 +1,5 @@
 import btn_menu from '../buttons/menu/btn_menu';
-import logoSVG from '../../assets/icons/placeholder/undraw_male_avatar_g98d.svg';
+import logo from '../../assets/icons/placeholder/undraw_male_avatar_g98d.svg';
 
 export default {
   element: 'nav',
@@ -26,7 +26,7 @@ export default {
                   element: 'img',
                   attributes: {
                     class: 'logo',
-                    src: logoSVG,
+                    src: logo,
                     onload: 'SVGInject(this)',
                   },
                 },

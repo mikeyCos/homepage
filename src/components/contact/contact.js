@@ -1,5 +1,6 @@
 import createElement from '../../helpers/createElement';
 import contactConfig from './contact.config';
+import '../../styles/contact.css';
 
 export default () => {
   const contact = {

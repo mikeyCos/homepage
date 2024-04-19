@@ -28,9 +28,9 @@ export default {
           ],
         },
         {
-          element: 'div',
+          element: 'header',
           attributes: {
-            class: 'nameLater',
+            class: 'article_header',
           },
           children: [
             {
@@ -97,9 +97,9 @@ export default {
           ],
         },
         {
-          element: 'div',
+          element: 'header',
           attributes: {
-            class: 'nameLater',
+            class: 'article_header',
           },
           children: [
             {
@@ -166,9 +166,9 @@ export default {
           ],
         },
         {
-          element: 'div',
+          element: 'header',
           attributes: {
-            class: 'nameLater',
+            class: 'article_header',
           },
           children: [
             {
@@ -176,38 +176,6 @@ export default {
               attributes: {
                 textContent: 'Project02',
               },
-            },
-            {
-              element: 'a',
-              attributes: {
-                href: '#',
-              },
-              children: [
-                {
-                  element: 'img',
-                  attributes: {
-                    class: 'icon icon_project',
-                    src: gitHubIcon,
-                    onload: 'SVGInject(this)',
-                  },
-                },
-              ],
-            },
-            {
-              element: 'a',
-              attributes: {
-                href: '#',
-              },
-              children: [
-                {
-                  element: 'img',
-                  attributes: {
-                    class: 'icon icon_project',
-                    src: openInNewIcon,
-                    onload: 'SVGInject(this)',
-                  },
-                },
-              ],
             },
             {
               element: 'a',
@@ -267,9 +235,9 @@ export default {
           ],
         },
         {
-          element: 'div',
+          element: 'header',
           attributes: {
-            class: 'nameLater',
+            class: 'article_header',
           },
           children: [
             {
@@ -336,9 +304,9 @@ export default {
           ],
         },
         {
-          element: 'div',
+          element: 'header',
           attributes: {
-            class: 'nameLater',
+            class: 'article_header',
           },
           children: [
             {
@@ -405,9 +373,9 @@ export default {
           ],
         },
         {
-          element: 'div',
+          element: 'header',
           attributes: {
-            class: 'nameLater',
+            class: 'article_header',
           },
           children: [
             {
