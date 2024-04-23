@@ -28,6 +28,10 @@ body {
   font-family: Arial;
 }
 
+body.stop_transitions .nav_right {
+  transition: none;
+}
+
 .icon {
   width: 32px;
   height: auto;

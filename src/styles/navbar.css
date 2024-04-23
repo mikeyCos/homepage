@@ -72,6 +72,7 @@ nav > * {
     width: auto;
     padding: 0;
     transform: translateX(0);
+    transition: none;
   }
 
   .btn_wrapper {

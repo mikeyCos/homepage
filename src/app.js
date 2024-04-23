@@ -3,6 +3,7 @@ import './app.css';
 import header from './components/header/header';
 import main from './components/main/main';
 import footer from './components/footer/footer';
+import loading from './components/loading/loading';
 
 (() => {
   const build = {
@@ -12,17 +13,35 @@ import footer from './components/footer/footer';
   };
 
   const app = {
+    timer: null,
     init() {},
     cacheDOM() {},
-    bindEvents() {},
+    bindEvents() {
+      this.stopTransitions = this.stopTransitions.bind(this);
+      this.resizeObserver = new ResizeObserver(this.stopTransitions);
+      this.resizeObserver.observe(document.body);
+    },
     render() {
-      // Render loading screen while building app.js
-      // Remove loading screen when building is complete
-      document.body.appendChild(build.header());
-      document.body.appendChild(build.main());
-      document.body.appendChild(build.footer());
+      for (const element in build) {
+        document.body.appendChild(build[element]());
+      }
+      this.bindEvents();
+    },
+    stopTransitions(entries) {
+      if (this.timer) {
+        clearTimeout(this.timer);
+        this.timer = null;
+      } else {
+        document.body.classList.add('stop_transitions');
+      }
+
+      this.timer = setTimeout(() => {
+        document.body.classList.remove('stop_transitions');
+        this.timer = null;
+      }, 100);
     },
   };
 
+  loading();
   app.render();
 })();

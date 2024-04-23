@@ -1,0 +1,41 @@
+#loading {
+  height: 100svh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 999;
+  background-color: #000000;
+}
+
+.loading_text {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.loading_text > * {
+  color: #ffffff;
+  position: relative;
+  font-size: 5rem;
+  animation-name: wave;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: calc(50ms * var(--delay));
+}
+
+@keyframes wave {
+  from {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}
