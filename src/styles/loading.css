@@ -3,7 +3,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   z-index: 999;
   background-color: #000000;
 }
@@ -17,7 +17,8 @@
 .loading_text > * {
   color: #ffffff;
   position: relative;
-  font-size: 5rem;
+  font-family: 'Caveat', cursive, Georgia, serif;
+  font-size: clamp(1.5rem, 7vw, 6rem);
   animation-name: wave;
   animation-duration: 500ms;
   animation-timing-function: ease-in-out;
@@ -32,10 +33,20 @@
   }
 
   50% {
-    transform: translateY(20px);
+    transform: translateY(50px);
   }
 
   to {
     transform: translateY(0px);
+  }
+}
+
+@keyframes reveal {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
   }
 }

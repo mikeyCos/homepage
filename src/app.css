@@ -1,15 +1,31 @@
 @font-face {
   /* https://fonts.google.com/specimen/Roboto+Condensed */
-  font-family: 'Roboto Condensed';
-  src: url(./assets/fonts/Roboto_Condensed/static/RobotoCondensed-Medium.ttf);
-  font-weight: 600;
+  font-family: 'Roboto';
+  font-weight: 100 900;
+  font-stretch: normal;
   font-style: normal;
+  src: url(./assets/fonts/Roboto_Condensed/RobotoCondensed-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'Caveat';
+  font-weight: 400 700;
+  font-stretch: normal;
+  font-style: normal;
+  src: url(./assets/fonts/Caveat/Caveat-VariableFont_wght.ttf);
 }
 
 :root {
   --section-heading-text-align: center;
   --section-heading-padding: 1rem;
   --section-heading-font-size: clamp(1.5rem, 1rem + 2.5vw, 4rem);
+  --scroll-margin: 80px;
+  --anchor-hover-color: #66008c;
+  --icon-hover-color: #66008c;
+  --background-color-primary: #f4f4f9;
+  --navbar-background-color: #59c3c3;
+  --article-background-color: #59c3c3;
+  --article-heading-font-family: 'Caveat';
 }
 
 *,
@@ -18,14 +34,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   min-height: 100svh;
-  background-color: #ff9b71;
-  font-family: 'Roboto Condensed', Arial;
-  font-family: 'Roboto Condensed';
-  font-family: Arial;
+  background-color: var(--background-color-primary);
+  font-family: 'Roboto', Arial;
 }
 
 body.stop_transitions .nav_right {

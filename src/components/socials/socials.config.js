@@ -20,6 +20,7 @@ export default {
             {
               element: 'img',
               attributes: {
+                loading: 'lazy',
                 class: 'icon icon_social',
                 src: gitHubIcon,
                 onload: 'SVGInject(this)',
@@ -41,6 +42,7 @@ export default {
             {
               element: 'img',
               attributes: {
+                loading: 'lazy',
                 class: 'icon icon_social',
                 src: linkedinIcon,
                 onload: 'SVGInject(this)',
@@ -62,6 +64,7 @@ export default {
             {
               element: 'img',
               attributes: {
+                loading: 'lazy',
                 class: 'icon icon_social',
                 src: xIcon,
                 onload: 'SVGInject(this)',

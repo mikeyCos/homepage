@@ -7,14 +7,17 @@ export default () => {
   const navbar = {
     init() {
       this.toggleMenu = this.toggleMenu.bind(this);
+      this.setCurrentNav = this.setCurrentNav.bind(this);
+      this.getNavItem = this.getNavItem.bind(this);
     },
     cacheDOM(element) {
-      // this.menuBtn = element.querySelector('.btn_menu');
       this.navRight = element.querySelector('.nav_right');
+      this.navItems = this.navRight.querySelectorAll('a');
     },
     bindEvents() {
       pubSub.subscribe('toggleMenu', this.toggleMenu);
-      // this.menuBtn.addEventListener('click', this.toggleMenu);
+      pubSub.subscribe('setCurrentNav', this.setCurrentNav);
+      this.navItems.forEach((navItem) => navItem.addEventListener('click', this.clickMenuBtn));
     },
     render() {
       const { element, children } = navbarConfig;
@@ -26,11 +29,19 @@ export default () => {
       return nav;
     },
     toggleMenu(toggle) {
-      console.log(`toggleMenu published from btn_menu.js`);
-      // this.navRight.classList.add('')
-      console.log(toggle);
-      this.navRight.classList.remove(toggle ? 'inactive' : 'active');
-      this.navRight.classList.add(toggle ? 'active' : 'inactive');
+      this.navRight.classList.toggle('active', toggle);
+    },
+    clickMenuBtn() {
+      pubSub.publish('clickMenu');
+    },
+    setCurrentNav(query) {
+      const prevNav = this.currentNav;
+      this.currentNav = this.getNavItem(query);
+      if (prevNav) prevNav.classList.remove('current');
+      this.currentNav.classList.add('current');
+    },
+    getNavItem(query) {
+      return [...this.navItems].find((navItem) => navItem.href.includes(query));
     },
   };
 

@@ -19,12 +19,13 @@ export default {
             {
               element: 'a',
               attributes: {
-                href: '#',
+                href: 'https://mikeycos.github.io/homepage/',
               },
               children: [
                 {
                   element: 'img',
                   attributes: {
+                    loading: 'lazy',
                     class: 'logo',
                     src: logo,
                     onload: 'SVGInject(this)',

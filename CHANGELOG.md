@@ -1,7 +1,32 @@
 # Changelog
 ---
-### 20 APR 2024
-- 
+### 26 APR 2024
+- Changed the `rootMargin` property value of `sectionOnScrollOptions` from `rootMargin: '-200px 0px -60px 0px'` to `rootMargin: '-400px 0px -250px 0px'`.
+- Added `@media (hover: none)` for the about image's hover effect.
+- Updated README.md.
+---
+### 25 APR 2024
+- Locally saved a variable font, `Caveat`.
+- Navigation bar items are stylized based on what section is scrolled into view; the Intersection Observer's options could use tweaking.
+- Installed `postcss` and `autoprefixer` dependencies.
+- Added `loading: 'lazy'` to `img` elements.
+---
+### 24 APR 2024
+- Made use of `classList.toggle`, instead of removing an element's class based on it's `classList` contains a string.
+- If `.nav_right` is active and a `.nav_item` is clicked the `.nav_right` is closed; the `.btn_menu` is clicked but only closes `.nav_right` if the button's computed display style is 'block'.
+- The contact section, 'on scroll view', will slide it's content from left and right once.
+---
+### 23 APR 2024
+- Created a two media query breakpoints, `min-width: 481px` and `min-width: 1025px`.
+- Applied `scroll-behavior: smooth` to all elements.
+- Continued applying CSS styles to elements.
+- Attempted to wrap about text around the about image.
+---
+### 22 APR 2024
+- Created a `ResizeObserver` in the `app` module; this will observe `document.body` and add/remove a class 'stop_transitions' to the body.
+- Created `loading.config` consisting of `span` elements spelling out `loading...`.
+- The `loading` module will display a loading screen and remove it's self once the `window` is loaded.
+- Created `wave` animation for the loading text.
 ---
 ### 19 APR 2024
 - Added a variety of CSS styles throughout sections, including but not limited to padding, margin, transform, transition, et cetera.

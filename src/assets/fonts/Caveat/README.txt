@@ -1,36 +1,21 @@
-Roboto Condensed Variable Font
-==============================
+Caveat Variable Font
+====================
 
-This download contains Roboto Condensed as both variable fonts and static fonts.
+This download contains Caveat as both a variable font and static fonts.
 
-Roboto Condensed is a variable font with this axis:
+Caveat is a variable font with this axis:
   wght
 
-This means all the styles are contained in these files:
-  Roboto_Condensed/RobotoCondensed-VariableFont_wght.ttf
-  Roboto_Condensed/RobotoCondensed-Italic-VariableFont_wght.ttf
+This means all the styles are contained in a single file:
+  Caveat-VariableFont_wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Roboto Condensed:
-  Roboto_Condensed/static/RobotoCondensed-Thin.ttf
-  Roboto_Condensed/static/RobotoCondensed-ExtraLight.ttf
-  Roboto_Condensed/static/RobotoCondensed-Light.ttf
-  Roboto_Condensed/static/RobotoCondensed-Regular.ttf
-  Roboto_Condensed/static/RobotoCondensed-Medium.ttf
-  Roboto_Condensed/static/RobotoCondensed-SemiBold.ttf
-  Roboto_Condensed/static/RobotoCondensed-Bold.ttf
-  Roboto_Condensed/static/RobotoCondensed-ExtraBold.ttf
-  Roboto_Condensed/static/RobotoCondensed-Black.ttf
-  Roboto_Condensed/static/RobotoCondensed-ThinItalic.ttf
-  Roboto_Condensed/static/RobotoCondensed-ExtraLightItalic.ttf
-  Roboto_Condensed/static/RobotoCondensed-LightItalic.ttf
-  Roboto_Condensed/static/RobotoCondensed-Italic.ttf
-  Roboto_Condensed/static/RobotoCondensed-MediumItalic.ttf
-  Roboto_Condensed/static/RobotoCondensed-SemiBoldItalic.ttf
-  Roboto_Condensed/static/RobotoCondensed-BoldItalic.ttf
-  Roboto_Condensed/static/RobotoCondensed-ExtraBoldItalic.ttf
-  Roboto_Condensed/static/RobotoCondensed-BlackItalic.ttf
+in those cases you can use the static font files for Caveat:
+  static/Caveat-Regular.ttf
+  static/Caveat-Medium.ttf
+  static/Caveat-SemiBold.ttf
+  static/Caveat-Bold.ttf
 
 Get started
 -----------

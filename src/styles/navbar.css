@@ -2,10 +2,10 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: end;
-  /* padding: 1rem 1rem 0rem 1rem; */
   padding: 1rem;
   position: relative;
-  background-color: bisque;
+  background-color: var(--navbar-background-color);
+  box-shadow: 0px 0px 10px 1px #000000;
 }
 
 nav > * {
@@ -18,6 +18,10 @@ nav > * {
   align-items: end;
 }
 
+.nav_item > a.current::after {
+  background-color: #66008c;
+}
+
 .logo {
   width: 48px;
   height: auto;
@@ -27,8 +31,7 @@ nav > * {
   display: none;
 }
 
-.nav_right,
-.nav_right.inactive {
+.nav_right {
   display: flex;
   visibility: hidden;
   flex-direction: column;
@@ -39,11 +42,9 @@ nav > * {
   width: 100%;
   top: 80px;
   left: 0;
-  padding: 1rem;
-  background-color: lightcoral;
-}
+  padding: 2rem;
+  background-color: #c1b9c8;
 
-.nav_right.inactive {
   transform: translateX(100%);
   transition:
     transform 250ms,
@@ -52,19 +53,24 @@ nav > * {
 
 .nav_right.active {
   visibility: visible;
-  transform: translateX(0%) perspective();
+  transform: translateX(0%);
   transition: transform 250ms ease-out;
 }
 
 .nav_right > .nav_item > a {
   display: block;
+  font-size: clamp(1.5rem, 5vw, 4rem);
+  font-weight: 500;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) {
+  /* Tablet */
+}
+
+@media screen and (min-width: 769px) {
   /* Desktop */
   .nav_right,
-  .nav_right.active,
-  .nav_right.inactive {
+  .nav_right.active {
     visibility: visible;
     flex-direction: row;
     position: initial;
@@ -73,6 +79,11 @@ nav > * {
     padding: 0;
     transform: translateX(0);
     transition: none;
+  }
+
+  .nav_right > .nav_item > a {
+    display: block;
+    font-size: clamp(1rem, 5vw, 1.5rem);
   }
 
   .btn_wrapper {

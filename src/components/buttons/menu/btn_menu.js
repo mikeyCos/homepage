@@ -7,6 +7,7 @@ export default () => {
   const menuButton = {
     init() {
       this.clickHandler = this.clickHandler.bind(this);
+      this.clickMenu = this.clickMenu.bind(this);
     },
     cacheDOM(element) {
       this.menuBtn = element;
@@ -14,6 +15,7 @@ export default () => {
     },
     bindEvents() {
       this.menuBtn.addEventListener('click', this.clickHandler);
+      pubSub.subscribe('clickMenu', this.clickMenu);
     },
     render() {
       const { element, attributes, children } = btn_menuConfig;
@@ -25,21 +27,18 @@ export default () => {
       return button;
     },
     clickHandler(e) {
-      console.log(`clickHandler firing from btn_menu.js`);
       const btn = e.currentTarget;
       const isPressed = btn.ariaPressed === 'true';
       const toggle = isPressed ? false : true;
       btn.ariaPressed = toggle;
       [...this.menuLines].forEach((menuLine) => {
-        if (toggle) {
-          // menuLine.classList.remove('inactive');
-          menuLine.classList.add('active');
-        } else {
-          // menuLine.classList.add('inactive');
-          menuLine.classList.remove('active');
-        }
+        menuLine.classList.toggle('active', toggle);
       });
       pubSub.publish('toggleMenu', toggle);
+    },
+    clickMenu() {
+      const display = window.getComputedStyle(this.menuBtn).display;
+      if (display === 'block') this.menuBtn.click();
     },
   };
 

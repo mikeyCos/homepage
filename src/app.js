@@ -4,6 +4,7 @@ import header from './components/header/header';
 import main from './components/main/main';
 import footer from './components/footer/footer';
 import loading from './components/loading/loading';
+import scrollController from './containers/scrollController';
 
 (() => {
   const build = {
@@ -13,7 +14,6 @@ import loading from './components/loading/loading';
   };
 
   const app = {
-    timer: null,
     init() {},
     cacheDOM() {},
     bindEvents() {
@@ -44,4 +44,5 @@ import loading from './components/loading/loading';
 
   loading();
   app.render();
+  scrollController();
 })();

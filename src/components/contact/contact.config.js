@@ -6,16 +6,19 @@ import socials from '../socials/socials';
 export default {
   element: 'section',
   attributes: {
-    class: 'contact',
+    id: 'contact',
   },
   children: [
     {
       element: 'div',
+      attributes: {
+        class: 'contact_left slide_in from_left',
+      },
       children: [
         {
           element: 'h2',
           attributes: {
-            id: 'contact',
+            class: 'contact heading',
             textContent: 'Contact me',
           },
         },
@@ -59,6 +62,7 @@ export default {
             {
               element: 'img',
               attributes: {
+                loading: 'lazy',
                 class: 'icon icon_contact',
                 src: phoneIcon,
                 onload: 'SVGInject(this)',
@@ -81,6 +85,7 @@ export default {
             {
               element: 'img',
               attributes: {
+                loading: 'lazy',
                 class: 'icon icon_contact',
                 src: emailIcon,
                 onload: 'SVGInject(this)',
@@ -99,10 +104,14 @@ export default {
     },
     {
       element: 'div',
+      attributes: {
+        class: 'contact_right slide_in from_right',
+      },
       children: [
         {
           element: 'img',
           attributes: {
+            loading: 'lazy',
             class: 'img_contact',
             src: contactSVG,
             onload: 'SVGInject(this)',

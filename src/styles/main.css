@@ -1,6 +1,10 @@
 section {
-  padding: 0rem 1rem;
-  padding-bottom: 2rem;
+  min-height: 100svh;
+  padding: clamp(1rem, 5vw, 5rem);
+}
+
+section:not(:first-of-type) {
+  margin-top: 200px;
 }
 
 a {
@@ -19,17 +23,56 @@ a:not(:has(.logo))::after {
   bottom: 0;
   left: 0;
   background-color: #000000;
-  transform: scaleX(0) translateY(9px);
+  transform: translateY(9px) scale(0);
   transition: transform 250ms ease-in;
 }
 
 a:hover {
-  color: #ffffff;
+  color: var(--anchor-hover-color);
+}
+
+a.current,
+a:hover {
   transform: translateY(-6px);
   transition: transform 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
+a.current::after,
 a:hover::after {
-  transform: scaleX(1) translateY(6px);
+  transform: translateY(6px) scale(1);
   transition: transform 250ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+a.current::after {
+  transform: translateY(6px) scaleY(2);
+}
+
+/* Intersection observers */
+.slide_in.from_right {
+  transform: translateX(100%);
+}
+
+.slide_in.from_left {
+  transform: translateX(-100%);
+}
+
+.slide_in.from_right,
+.slide_in.from_left {
+  opacity: 0;
+  transition: transform 250ms ease-in;
+}
+
+.slide_in.from_right.appear,
+.slide_in.from_left.appear {
+  opacity: 1;
+  transform: translateX(0%);
+  transition:
+    opacity 100ms ease-out,
+    transform 250ms ease-out;
+}
+
+@media (hover: hover) {
+}
+
+@media (hover: none) {
 }

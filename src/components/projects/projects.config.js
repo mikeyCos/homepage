@@ -4,13 +4,13 @@ import openInNewIcon from '../../assets/icons/open_in_new.svg';
 export default {
   element: 'section',
   attributes: {
-    class: 'projects',
+    id: 'projects',
   },
   children: [
     {
       element: 'h2',
       attributes: {
-        id: 'projects',
+        class: 'projects heading',
         textContent: 'Projects',
       },
     },
@@ -29,6 +29,8 @@ export default {
                 {
                   element: 'img',
                   attributes: {
+                    loading: 'lazy',
+                    alt: '#',
                     src: 'https://placehold.co/600x400',
                   },
                 },
@@ -61,6 +63,7 @@ export default {
                         {
                           element: 'img',
                           attributes: {
+                            loading: 'lazy',
                             class: 'icon icon_project',
                             src: gitHubIcon,
                             onload: 'SVGInject(this)',
@@ -77,6 +80,7 @@ export default {
                         {
                           element: 'img',
                           attributes: {
+                            loading: 'lazy',
                             class: 'icon icon_project',
                             src: openInNewIcon,
                             onload: 'SVGInject(this)',
@@ -106,6 +110,8 @@ export default {
                 {
                   element: 'img',
                   attributes: {
+                    loading: 'lazy',
+                    alt: '#',
                     src: 'https://placehold.co/600x400',
                   },
                 },
@@ -138,6 +144,7 @@ export default {
                         {
                           element: 'img',
                           attributes: {
+                            loading: 'lazy',
                             class: 'icon icon_project',
                             src: gitHubIcon,
                             onload: 'SVGInject(this)',
@@ -154,6 +161,7 @@ export default {
                         {
                           element: 'img',
                           attributes: {
+                            loading: 'lazy',
                             class: 'icon icon_project',
                             src: openInNewIcon,
                             onload: 'SVGInject(this)',
@@ -183,6 +191,8 @@ export default {
                 {
                   element: 'img',
                   attributes: {
+                    loading: 'lazy',
+                    alt: '#',
                     src: 'https://placehold.co/600x400',
                   },
                 },
@@ -215,6 +225,7 @@ export default {
                         {
                           element: 'img',
                           attributes: {
+                            loading: 'lazy',
                             class: 'icon icon_project',
                             src: gitHubIcon,
                             onload: 'SVGInject(this)',
@@ -231,6 +242,7 @@ export default {
                         {
                           element: 'img',
                           attributes: {
+                            loading: 'lazy',
                             class: 'icon icon_project',
                             src: openInNewIcon,
                             onload: 'SVGInject(this)',
@@ -260,6 +272,8 @@ export default {
                 {
                   element: 'img',
                   attributes: {
+                    loading: 'lazy',
+                    alt: '#',
                     src: 'https://placehold.co/600x400',
                   },
                 },
@@ -292,6 +306,7 @@ export default {
                         {
                           element: 'img',
                           attributes: {
+                            loading: 'lazy',
                             class: 'icon icon_project',
                             src: gitHubIcon,
                             onload: 'SVGInject(this)',
@@ -308,6 +323,7 @@ export default {
                         {
                           element: 'img',
                           attributes: {
+                            loading: 'lazy',
                             class: 'icon icon_project',
                             src: openInNewIcon,
                             onload: 'SVGInject(this)',
@@ -337,6 +353,8 @@ export default {
                 {
                   element: 'img',
                   attributes: {
+                    loading: 'lazy',
+                    alt: '#',
                     src: 'https://placehold.co/600x400',
                   },
                 },
@@ -369,6 +387,7 @@ export default {
                         {
                           element: 'img',
                           attributes: {
+                            loading: 'lazy',
                             class: 'icon icon_project',
                             src: gitHubIcon,
                             onload: 'SVGInject(this)',
@@ -385,6 +404,7 @@ export default {
                         {
                           element: 'img',
                           attributes: {
+                            loading: 'lazy',
                             class: 'icon icon_project',
                             src: openInNewIcon,
                             onload: 'SVGInject(this)',
@@ -414,6 +434,8 @@ export default {
                 {
                   element: 'img',
                   attributes: {
+                    loading: 'lazy',
+                    alt: '#',
                     src: 'https://placehold.co/600x400',
                   },
                 },
@@ -446,6 +468,7 @@ export default {
                         {
                           element: 'img',
                           attributes: {
+                            loading: 'lazy',
                             class: 'icon icon_project',
                             src: gitHubIcon,
                             onload: 'SVGInject(this)',
@@ -462,6 +485,7 @@ export default {
                         {
                           element: 'img',
                           attributes: {
+                            loading: 'lazy',
                             class: 'icon icon_project',
                             src: openInNewIcon,
                             onload: 'SVGInject(this)',
