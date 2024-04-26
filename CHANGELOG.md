@@ -4,6 +4,8 @@
 - Changed the `rootMargin` property value of `sectionOnScrollOptions` from `rootMargin: '-200px 0px -60px 0px'` to `rootMargin: '-400px 0px -250px 0px'`.
 - Added `@media (hover: none)` for the about image's hover effect.
 - Updated README.md.
+- Added `devServer` property to `webpack.config` and removed `publicPath` from `output`.
+- Removed `server.js` file.
 ---
 ### 25 APR 2024
 - Locally saved a variable font, `Caveat`.

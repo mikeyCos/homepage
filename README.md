@@ -3,7 +3,7 @@
 ## Live preview: [Homepage](https://mikeycos.github.io/homepage/)
 ---
 ### Ideas
-1. Placeholder
+1. Lorem ipsum
 ---
 ### Questions
 1. How to obtain a current CSS value defined by media queries with JavaScript?
